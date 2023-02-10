@@ -45,8 +45,9 @@ See [CONTRIBUTING.md](./docs/CONTRIBUTING.md).
 		= Tuner options =
   [-d <RTL-SDR USB device index> | :<RTL-SDR USB device serial> | <SoapySDR device query> | rtl_tcp | help]
   [-g <gain> | help] (default: auto)
-  [-t <settings>] apply a list of keyword=value settings for SoapySDR devices
-       e.g. -t "antenna=A,bandwidth=4.5M,rfnotch_ctrl=false"
+  [-t <settings>] apply a list of keyword=value settings to the SDR device
+       e.g. for SoapySDR -t "antenna=A,bandwidth=4.5M,rfnotch_ctrl=false"
+       for RTL-SDR use "direct_samp[=1]", "offset_tune[=1]", "digital_agc[=1]", "biastee[=1]"
   [-f <frequency>] Receive frequency(s) (default: 433920000 Hz)
   [-H <seconds>] Hop interval for polling of multiple frequencies (default: 600 seconds)
   [-p <ppm_error>] Correct rtl-sdr tuner frequency offset error (default: 0)
@@ -315,8 +316,11 @@ See [CONTRIBUTING.md](./docs/CONTRIBUTING.md).
     [230]  Vauno EN8822C
     [231]  Govee Water Leak Detector H5054
     [232]  TFA Dostmann 14.1504.V2 Radio-controlled grill and meat thermometer
-    [233]* CED7000 Shot timer
+    [233]* CED7000 Shot Timer
     [234]  Watchman Sonic Advanced / Plus
+    [235]  Oil Ultrasonic SMART FSK
+    [236]  Gasmate BA1008 meat thermometer
+    [237]  Flowis flow meters
 
 * Disabled by default, use -R n or a conf file to enable
 

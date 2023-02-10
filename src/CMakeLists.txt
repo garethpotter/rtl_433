@@ -110,10 +110,12 @@ add_library(r_433 STATIC
     devices/fineoffset_wn34.c
     devices/fineoffset_ws80.c
     devices/flex.c
+    devices/flowis.c
     devices/fordremote.c
     devices/fs20.c
     devices/ft004b.c
     devices/funkbus.c
+    devices/gasmate_ba1008.c
     devices/ge_coloreffects.c
     devices/generic_motion.c
     devices/generic_remote.c
@@ -170,6 +172,7 @@ add_library(r_433 STATIC
     devices/nexus.c
     devices/nice_flor_s.c
     devices/norgo.c
+    devices/oil_smart.c
     devices/oil_standard.c
     devices/oil_watchman.c
     devices/oil_watchman_advanced.c
